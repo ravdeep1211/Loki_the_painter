@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: beige;
+}
+#heading{
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(224, 49, 30);
+    text-shadow: 8px 2px 3px  rgb(137, 94, 98);
+}
+#box{
+    height: 400px;
+    width: 400px;
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#download-button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+#font-btn button{
+    height: 30px;
+    padding: 0 14px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(205, 236, 228);
+    cursor: pointer;
+}
+#download-button:hover{
+    background-color: rgb(11, 11, 11);
+}
+#bg-color button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}

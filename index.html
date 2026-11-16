@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1 id="heading">Loki The Painter</h1>
+        <p>Edit your thoughts Freely</p>
+        
+
+        <div id="box" contenteditable="true">
+            Type your text here...
+        </div>
+        <br>
+
+        <button id="download-button">Download</button>
+        <div id="main">
+            <div id="first">
+                <h1>choose background color</h1>
+                <div id="bg-color">
+                    <button onclick="BgColor('red')" style="background-color: red;"></button>
+                    <button onclick="BgColor('green')" style="background-color: green;"></button> 
+                    <button onclick="BgColor('blue')" style="background-color: blue;"></button>
+                    <button onclick="BgColor('black')" style="background-color: black;"></button>
+                    <button onclick="BgColor('orange')" style="background-color: orange;"></button>
+                    <button onclick="BgColor('purple')" style="background-color: purple;"></button>
+                    <button onclick="BgColor('pink')" style="background-color: pink;"></button>
+                    <button onclick="BgColor('yellow')" style="background-color: yellow;"></button>
+                   
+
+                </div>
+            </div>
+            
+            <div id="second">
+                <h1>choose text color</h1>
+                <div id="bg-color">
+                    <button onclick="textColor('red')" style="background-color: red;"></button>
+                    <button onclick="textColor('green')" style="background-color: green;"></button> 
+                    <button onclick="textColor('blue')" style="background-color: blue;"></button>
+                    <button onclick="textColor('black')" style="background-color: black;"></button>
+                    <button onclick="textColor('orange')" style="background-color: orange;"></button>
+                    <button onclick="textColor('purple')" style="background-color: purple;"></button>
+                    <button onclick="textColor('pink')" style="background-color: pink;"></button>
+                    <button onclick="textColor('yellow')" style="background-color: yellow;"></button>
+
+                </div>
+            </div>
+            <div id="third">
+                
+    <h1>choose font family</h1>
+    <div id="font-btn">  
+        <button onclick="changeFontFamily('cursive')" style="font-family: cursive;">Cursive</button>
+        <button onclick="changeFontFamily('monospace')" style="font-family: monospace;">Monospace</button>
+        <button onclick="changeFontFamily('serif')" style="font-family: serif;">Serif</button>
+        <button onclick="changeFontFamily('fantasy')" style="font-family: fantasy;">Fantasy</button>
+    
+
+                </div>
+            </div>
+        </div>
+    </center>
+    <script>
+        function BgColor(color){
+            document.getElementById("box").style.backgroundColor=color
+        }
+        function textColor(color){
+            document.getElementById("box").style.color=color
+        }
+         function changeFontFamily(font){
+            document.getElementById("box").style.fontFamily=font
+         }
+    </script>
+    
+</body>
+</html>
